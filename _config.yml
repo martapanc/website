@@ -8,7 +8,15 @@ sass:
     - _sass
     - node_modules
 
-exclude: []
+exclude:
+  - node_modules
+  - LICENSE
+  - Makefile
+  - README.md
+  - package.json
+  - package-lock.json
+  - yarn.lock
+
 #plugins:
 #  - jekyll-feed
 
