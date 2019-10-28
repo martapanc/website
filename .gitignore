@@ -1,5 +1,4 @@
 _site
 .sass-cache
-assets/vendor
-*~
-node_modules
+.jekyll-metadata
+public/
