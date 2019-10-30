@@ -1,9 +1,9 @@
 <section class="overview-section p-3 p-lg-3">
     <div class="container">
         <h2 class="section-title font-weight-bold mb-3">Software Development</h2>
-        <div class="section-intro mb-5">I have more than 10 years' experience building software for clients all over the
-            world. Below is a quick overview of my main technical skill sets and technologies I use. Want to find out
-            more about my experience? Check out my <a href="resume.html">online resume</a> and <a href="portfolio.html">project
+        <div class="section-intro mb-5">Software development has been both my passion and my work for 5 years. Below is
+            a quick overview of my main technical skill sets and technologies I use. Want to find out more about my
+            experience? Check out my <a href="/cv.html">online CV</a> and <a href="/projects.html">project
                 portfolio</a>.
         </div>
         <div class="row">
@@ -33,7 +33,7 @@
             </div><!--//item-->
 
             <!-- JS, React & Angular  -->
-            <div class="item col-6 col-md-4 col-lg-4">
+            <div class="item col-12 col-md-4 col-lg-4">
                 <div class="item-inner">
                     <img src="/assets/images/languages/js.svg" alt="Javascript" width="35px">
                     <img src="/assets/images/languages/jquery.svg" alt="Javascript" width="35px">
@@ -47,8 +47,12 @@
                 </div><!--//item-inner-->
             </div><!--//item-->
 
+            <div class="item col-12 col-md-12 col-lg-12 text-right">
+                <button class="btn btn-info" onclick="readMore()" id="read-more-btn">Read more</button>
+            </div>
+
             <!-- C# -->
-            <div class="item col-6 col-md-4 col-lg-4">
+            <div class="item col-12 col-md-4 col-lg-4 read-more-hide">
                 <div class="item-inner">
                     <img src="/assets/images/languages/cs.svg" alt="C #" width="35px">
                     <h3 class="item-title">C#</h3>
@@ -60,18 +64,23 @@
             </div><!--//item-->
 
             <!-- HTML, CSS -->
-            <div class="item col-6 col-md-4 col-lg-4">
+            <div class="item col-12 col-md-4 col-lg-4 read-more-hide">
                 <div class="item-inner">
                     <img src="/assets/images/languages/html.svg" alt="HTML" width="35px">
                     <img src="/assets/images/languages/css.svg" alt="CSS" width="35px">
                     <img src="/assets/images/languages/sass.svg" alt="Sass" width="35px">
+                    <img src="/assets/images/languages/bootstrap.svg" alt="Bootstrap" width="35px">
                     <h3 class="item-title">Web development</h3>
-                    <div class="item-desc"></div>
+                    <div class="item-desc">
+                        Working on the front-end is always good fun and gives me the chance to explore frameworks and
+                        design techniques. I've worked with Bootstrap on various uni and personal projects - <a
+                            href="/projects.html">check them out</a>.
+                    </div>
                 </div><!--//item-inner-->
             </div><!--//item-->
 
             <!-- SQL -->
-            <div class="item col-6 col-md-4 col-lg-4">
+            <div class="item col-12 col-md-4 col-lg-4 read-more-hide">
                 <div class="item-inner">
                     <img src="/assets/images/languages/mysql.svg" alt="MySQL" width="35px">
                     <img src="/assets/images/languages/postgres.svg" alt="Postgres" width="35px">
@@ -84,31 +93,59 @@
             </div><!--//item-->
 
             <!-- PHP -->
-            <div class="item col-6 col-md-4 col-lg-4">
+            <div class="item col-12 col-md-4 col-lg-4 read-more-hide">
                 <div class="item-inner">
                     <img src="/assets/images/languages/php.svg" alt="php" width="35px">
                     <h3 class="item-title">PHP</h3>
-                    <div class="item-desc">A Library Management app was the project that introduced me to complex
-                        Database architectures. Since then I designed several systems for both personal and work
-                        projects, mostly with Postgres and MySQL.
+                    <div class="item-desc">The booking management service of my current company is written in PHP, which
+                        was a good chance to learn about this language. I still have a lot to learn and explore - but I
+                        like being challenged.
                     </div>
                 </div><!--//item-inner-->
             </div><!--//item-->
 
             <!-- OS -->
-            <div class="item col-6 col-md-4 col-lg-4">
+            <div class="item col-12 col-md-4 col-lg-4 read-more-hide">
                 <div class="item-inner">
                     <img src="/assets/images/languages/win8.svg" alt="Windows" width="35px">
                     <img src="/assets/images/languages/apple.svg" alt="Macintosh" width="35px">
                     <img src="/assets/images/languages/ubuntu.svg" alt="Ubuntu" width="35px">
                     <img src="/assets/images/languages/debian.svg" alt="Debian" width="35px">
-                    <h3 class="item-title">OS</h3>
-                    <div class="item-desc">A Library Management app was the project that introduced me to complex
-                        Database architectures. Since then I designed several systems for both personal and work
-                        projects, mostly with Postgres and MySQL.
+                    <img src="/assets/images/languages/redhat.svg" alt="Redhat" width="35px">
+                    <h3 class="item-title">OSs</h3>
+                    <div class="item-desc">I'm confident working with all the common operating systems, MacOS and
+                        Windows in particular. Linux distribution I have experience of are Ubuntu, Raspbian/Debian and
+                        RedHat.
+                    </div>
+                </div><!--//item-inner-->
+            </div><!--//item-->
+
+            <!-- IDE -->
+            <div class="item col-12 col-md-4 col-lg-4 read-more-hide">
+                <div class="item-inner">
+                    <img src="/assets/images/languages/intellij.png" alt="IntelliJ" width="35px">
+                    <img src="/assets/images/languages/netbeans.png" alt="NetBeans" width="35px">
+                    <img src="/assets/images/languages/vsc.svg" alt="Visual Studio" width="35px">
+                    <img src="/assets/images/languages/eclipse.png" alt="Eclipse" width="35px">
+                    <img src="/assets/images/languages/atom.jpeg" alt="Atom" width="35px">
+                    <h3 class="item-title">IDEs</h3>
+                    <div class="item-desc">IntelliJ and the Jetbrains suite are a favourite, but I have experience with
+                        NetBeans, Visual Studio and Eclipse, as well as Atom for quick coding.
                     </div>
                 </div><!--//item-inner-->
             </div><!--//item-->
         </div><!--//row-->
     </div><!--//container-->
 </section>
+
+<script>
+    var hideElements = document.getElementsByClassName('read-more-hide');
+    var showMoreBtn = document.getElementById('read-more-btn');
+
+    function readMore() {
+        while (hideElements[0]) {
+            hideElements[0].classList.remove('read-more-hide');
+        }
+        showMoreBtn.classList.add('read-more-hide');
+    }
+</script>
