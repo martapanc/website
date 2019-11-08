@@ -32,6 +32,12 @@ h5 span {
   max-width: 750px;
 }
 
+.responsive-adjust {
+  @media (max-width: 767px) {
+    margin-bottom: 20px;
+  }
+}
+
 img.responsive-hide {
   margin-left: 10px;
 }
@@ -44,4 +50,8 @@ img.responsive-hide {
 
 .read-more-hide {
   display: none;
+}
+
+.github-calendar {
+  margin-bottom: 40px;
 }
