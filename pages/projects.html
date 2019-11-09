@@ -9,4 +9,101 @@ permalink: /projects.html
     </div><!--//container-->
 </section>
 
-{% include wip.html %}
+<section class="project-section p-3 p-lg-3">
+    <div class="container">
+        <div class="row">
+            <div class="item col-12">
+                <span><b>Filter by: &emsp;</b></span>
+                <button id="java-filter-btn" class="btn btn-danger btn-sm filter-btn">Java</button>
+                <button id="python-filter-btn" class="btn btn-primary btn-primary2 btn-sm filter-btn">Python</button>
+                <button id="web-filter-btn" class="btn btn-warning btn-sm filter-btn">Web</button>
+                <button id="uni-filter-btn" class="btn btn-light btn-sm filter-btn">University</button>
+                <button id="work-filter-btn" class="btn btn-primary btn-sm filter-btn">Work</button>
+                <button id="hack-filter-btn" class="btn btn-info btn-info2 btn-sm filter-btn">Hackathon</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="item col-12 col-md-4 col-lg-4">
+                <div class="item-inner">
+                    <img src="/assets/images/projects/fiscalcode.jpeg" alt="Fiscal Code calculator"
+                         class="project-picture">
+                    <h4 class="item-title">Fiscal Code calculator</h4>
+                    <button onclick="window.open('https://github.com/martapanc/ItalianFiscalCodeCalculator','_blank');"
+                            class="button btn btn-primary btn-primary2"><i class="fab fa-github fa-fw"></i> Check it out
+                    </button>
+                    <button type="button" class="btn btn-info btn-info2 info-popover"
+                            data-content="Another <b>Java</b> app developed for my uni programming course. It allows the user to
+                            calculate their tax code by entering their personal data.
+                            The app was designed to exploit various advanced features of the Java language,
+                            such Exception handling, Multithreading, Generics, Reflection, RegEx and Streams. Also, JUnit tests
+                            cover most edge cases for user input.">
+                        Info
+                    </button>
+                </div><!--//item-inner-->
+            </div><!--//item-->
+
+            <div class="item col-12 col-md-4 col-lg-4">
+                <div class="item-inner">
+                    <img src="/assets/images/projects/Werners.jpeg" alt="Werner's Burgers & Panini"
+                         class="project-picture">
+                    <h4 class="item-title">Werner's Burgers & Panini</h4>
+                    <button class="btn btn-primary btn-primary2"><i class="fab fa-github fa-fw"></i> Check it out
+                    </button>
+                    <button type="button" class="btn btn-info btn-info2 info-popover"
+                            data-content="A full <b>Restaurant manager webapp</b> in <b>Java</b> is the final project my team developed for
+                                            the Internet & Mobile Services course: it allows customers to reserve a table or to book a
+                                            takeaway order, and the restaurant managers to verify the status of the reservations and orders,
+                                            add and remove takeaway meals and check other employees' accounts, mostly in the form of CRUD
+                                            tables.">Info
+                    </button>
+                </div><!--//item-inner-->
+            </div><!--//item-->
+
+            <div class="item col-12 col-md-4 col-lg-4">
+                <div class="item-inner">
+                    <img src="/assets/images/projects/ict.png" alt="Holiday calendar & timesheet"
+                         class="project-picture">
+                    <h4 class="item-title">Holiday timesheet</h4>
+                    <button class="btn btn-primary btn-primary2"
+                            onclick="window.open('/assets/images/projects/Internship_Final_Report.pdf','_blank');">
+                        Project report
+                    </button>
+                    <button type="button" class="btn btn-info btn-info2 info-popover"
+                            data-content="I interned for three months at the <a href='https://www.ict-group.it/en/' title='test add link'>ICT-Group</a>
+                            as a web developer, and my task was to build an additional feature to the company’s <b>HR
+                            management software</b>: a portal for the request and approval of the employee vacations,
+                            work permits, transfers and bank hours. The UI I developed consists of customisable calendars
+                            and timesheets, which offer different views according to the role of the logged user
+                            (mainly employee and manager), and was built using <b>AngularJS</b> with the <b>Boostrap CSS</b> framework.">
+                        Info
+                    </button>
+                </div><!--//item-inner-->
+            </div><!--//item-->
+
+            <div class="item col-12 col-md-4 col-lg-4">
+                <div class="item-inner">
+                    <img src="/assets/images/projects/gess.jpg" alt="Food saver (GESS 2017)"
+                         class="project-picture">
+                    <h4 class="item-title">Food saver (GESS 2017)</h4>
+                    <button class="btn btn-primary btn-primary2"
+                            onclick="window.open('https://globalsummerschool.org/','_blank');">
+                        Website
+                    </button>
+                    <button type="button" class="btn btn-info btn-info2 info-popover"
+                            data-content="I was selected (among 1200+ applications) to attend the <b>Global Entrepreneurship
+                            Summer School</b> (GESS) 2017 in Shanghai. This year's topic was &quot;Food&quot;, and our goal
+                            was to find innovative solutions to related problems - such as food waste, obesity, hidden
+                            hunger and food safety. My team designed a <b>mobile app</b> that connects users to
+                            supermarkets and local food suppliers: most food markets have an &quot;expiring soon&quot;
+                            section with aliments that cannot be displayed as too close to their expiration date.
+                            This app would be a database listing such products, so that customers can save money and help
+                            <b>reduce food waste</b>.">
+                        Info
+                    </button>
+                </div><!--//item-inner-->
+            </div><!--//item-->
+
+        </div><!--//row-->
+    </div><!--//container-->
+</section>
+
