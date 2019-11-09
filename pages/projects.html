@@ -20,10 +20,11 @@ permalink: /projects.html
                 <button id="uni-filter-btn" class="btn btn-light btn-sm filter-btn">University</button>
                 <button id="work-filter-btn" class="btn btn-primary btn-sm filter-btn">Work</button>
                 <button id="hack-filter-btn" class="btn btn-info btn-info2 btn-sm filter-btn">Hackathon</button>
+                <button id="all-filter-btn" class="btn btn-success btn-sm filter-btn">Show all</button>
             </div>
         </div>
         <div class="row">
-            <div class="item col-12 col-md-4 col-lg-4">
+            <div class="item col-12 col-md-4 col-lg-4 project-component" data-tags="java university">
                 <div class="item-inner">
                     <img src="/assets/images/projects/fiscalcode.jpeg" alt="Fiscal Code calculator"
                          class="project-picture">
@@ -42,7 +43,7 @@ permalink: /projects.html
                 </div><!--//item-inner-->
             </div><!--//item-->
 
-            <div class="item col-12 col-md-4 col-lg-4">
+            <div class="item col-12 col-md-4 col-lg-4 project-component" data-tags="java js database web university">
                 <div class="item-inner">
                     <img src="/assets/images/projects/Werners.jpeg" alt="Werner's Burgers & Panini"
                          class="project-picture">
@@ -59,7 +60,7 @@ permalink: /projects.html
                 </div><!--//item-inner-->
             </div><!--//item-->
 
-            <div class="item col-12 col-md-4 col-lg-4">
+            <div class="item col-12 col-md-4 col-lg-4 project-component" data-tags="js web work">
                 <div class="item-inner">
                     <img src="/assets/images/projects/ict.png" alt="Holiday calendar & timesheet"
                          class="project-picture">
@@ -80,7 +81,7 @@ permalink: /projects.html
                 </div><!--//item-inner-->
             </div><!--//item-->
 
-            <div class="item col-12 col-md-4 col-lg-4">
+            <div class="item col-12 col-md-4 col-lg-4 project-component" data-tags="hack">
                 <div class="item-inner">
                     <img src="/assets/images/projects/gess.jpg" alt="Food saver (GESS 2017)"
                          class="project-picture">
@@ -106,4 +107,6 @@ permalink: /projects.html
         </div><!--//row-->
     </div><!--//container-->
 </section>
+
+{% include section.html %}
 

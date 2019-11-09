@@ -60,8 +60,25 @@
             toggle: 'popover',
             trigger: 'focus',
             html: true
-        })
-    })
+        });
+
+        const filterButtonList = ['java', 'python', 'web', 'uni', 'work', 'hack', 'all'];
+        filterButtonList.forEach(filterOnClick);
+
+        function filterOnClick(item, index) {
+            $('#' + item + '-filter-btn').click(function () {
+                $('.project-component').each(function() {
+                    $(this).show();
+                    if (item !== 'all') {
+                        let tags = $(this).attr('data-tags').split(" ");
+                        if (!tags.includes(item)) {
+                            $(this).hide();
+                        }
+                    }
+                });
+            });
+        }
+    });
 </script>
 </body>
 </html>
