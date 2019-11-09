@@ -43,14 +43,42 @@
 
 </div><!--//main-wrapper-->
 
-<script src="{{'/assets/js/jquery.min.js' | prepend: site.baseurl}}"></script>
+<script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
 <script src="{{'/assets/js/popper.min.js' | prepend: site.baseurl}}"></script>
 <script src="{{'/assets/js/bootstrap.min.js' | prepend: site.baseurl}}"></script>
+<!--<script src="{{'/assets/js/jquery.min.js' | prepend: site.baseurl}}"></script>-->
 <script src="{{'/assets/js/jquery.nanogallery2.min.js' | prepend: site.baseurl}}"></script>
 <script src="{{'/assets/js/github-calendar.min.js' | prepend: site.baseurl}}"></script>
 
 <script>
     GitHubCalendar(".calendar", "martapanc", {responsive: true, summary_text: "", global_stats: true});
+
+    $(function () {
+        $('.info-popover').popover({
+            container: 'body',
+            placement: 'bottom',
+            toggle: 'popover',
+            trigger: 'focus',
+            html: true
+        });
+
+        const filterButtonList = ['java', 'python', 'web', 'uni', 'work', 'hack', 'all'];
+        filterButtonList.forEach(filterOnClick);
+
+        function filterOnClick(item, index) {
+            $('#' + item + '-filter-btn').click(function () {
+                $('.project-component').each(function() {
+                    $(this).show();
+                    if (item !== 'all') {
+                        let tags = $(this).attr('data-tags').split(" ");
+                        if (!tags.includes(item)) {
+                            $(this).hide();
+                        }
+                    }
+                });
+            });
+        }
+    });
 </script>
 </body>
 </html>
