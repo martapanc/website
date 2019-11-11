@@ -26,7 +26,7 @@ permalink: /projects.html
         <div class="row">
             <div class="item col-12 col-md-4 col-lg-4 project-component" data-tags="java uni">
                 <div class="item-inner">
-                    <img src="/assets/images/projects/fiscalcode.jpeg" alt="Fiscal Code calculator"
+                    <img src="{{ '/assets/images/projects/fiscalcode.jpeg' | prepend: site.baseurl }}" alt="Fiscal Code calculator"
                          class="project-picture">
                     <h4 class="item-title">Fiscal Code calculator</h4>
                     <button onclick="window.open('https://github.com/martapanc/ItalianFiscalCodeCalculator','_blank');"
@@ -45,7 +45,7 @@ permalink: /projects.html
 
             <div class="item col-12 col-md-4 col-lg-4 project-component" data-tags="java js db web uni">
                 <div class="item-inner">
-                    <img src="/assets/images/projects/Werners.jpeg" alt="Werner's Burgers & Panini"
+                    <img src="{{ '/assets/images/projects/Werners.jpeg' | prepend: site.baseurl }}" alt="Werner's Burgers & Panini"
                          class="project-picture">
                     <h4 class="item-title">Werner's Burgers & Panini</h4>
                     <button class="btn btn-primary btn-primary2"><i class="fab fa-github fa-fw"></i> Check it out
@@ -62,11 +62,11 @@ permalink: /projects.html
 
             <div class="item col-12 col-md-4 col-lg-4 project-component" data-tags="js web work">
                 <div class="item-inner">
-                    <img src="/assets/images/projects/ict.png" alt="Holiday calendar & timesheet"
+                    <img src="{{ '/assets/images/projects/ict.png' | prepend: site.baseurl }}" alt="Holiday calendar & timesheet"
                          class="project-picture">
                     <h4 class="item-title">Holiday timesheet</h4>
                     <button class="btn btn-primary btn-primary2"
-                            onclick="window.open('/assets/images/projects/Internship_Final_Report.pdf','_blank');">
+                            onclick="window.open('{{ `/assets/images/projects/Internship_Final_Report.pdf` | prepend: site.baseurl }}','_blank');">
                         Project report
                     </button>
                     <button type="button" class="btn btn-info btn-info2 info-popover"
@@ -83,7 +83,7 @@ permalink: /projects.html
 
             <div class="item col-12 col-md-4 col-lg-4 project-component" data-tags="hack">
                 <div class="item-inner">
-                    <img src="/assets/images/projects/gess.jpg" alt="Food saver (GESS 2017)"
+                    <img src="{{ '/assets/images/projects/gess.jpg' | prepend: site.baseurl }}" alt="Food saver (GESS 2017)"
                          class="project-picture">
                     <h4 class="item-title">Food saver (GESS 2017)</h4>
                     <button class="btn btn-primary btn-primary2"
